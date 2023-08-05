@@ -1,0 +1,119 @@
+body {
+    background-image: url('coffee.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: #bf8d54;
+}
+h1 {
+    color: white;
+    font-size: 16px;
+    font-family: 'Klee One', cursive;
+    text-align: center;
+}
+.menu {
+    background-color: #6b3731;
+    padding: 15px;
+}
+.links {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%; 
+    font-family: 'Klee One', cursive;
+    flex-wrap: wrap;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+.btnMenu {
+    align-self: center;
+    position: absolute;
+}
+.btn {
+    background-color: #6b3731;
+    padding: 40px;
+    width: 250px;
+    font-size: 20px;
+    border: none;
+    color: white;
+    font-family: 'Klee One', cursive;
+}
+.anim {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.two {
+    margin-right: 60px;
+    padding: 10px;
+}
+.three {
+    margin-right: 40px;
+    padding: 10px;
+}
+.four {
+    margin-right: 20px;
+    padding: 10px;
+}
+
+
+@media all and (max-width:800px) {
+    .one {
+        display: none;
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn {
+        padding: 15px;
+        width: 180px;
+        font-size: 15px;
+    }
+    .btnMenu {
+        position: relative;
+    }
+}
+@media all and (max-width:500px) {
+    .one {
+        display: none;
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .links {
+        font-size: 15px;
+        }
+    .btn {
+        padding: 15px;
+        width: 150px;
+        font-size: 15px;
+    }
+    .btnMenu {
+        position: relative;
+    }
+    .two {
+        width: 100px;
+        height: 130px;
+    }
+    .three {
+        width: 100px;
+        height: 130px;
+    }
+    .four {
+        width: 100px;
+        height: 130px;
+    }
+}

@@ -1,0 +1,127 @@
+body {
+    background-image: url('dark-blackboard.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+.header {
+    background-color: #6b3731;
+    padding: 15px;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+.links {
+    color: #ffc61b;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;/*  не сработает */
+    height: 100%; /* поэтому добавили*/
+    font-family: 'Klee One', cursive;
+}
+
+
+    #contact {
+        background-color: #6b3731;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+    }
+    h2 {
+        color: #ffc61b;
+        font-size: 30px;
+        font-family: 'Klee One', cursive;
+    }
+.contact_item {
+        display: flex;
+        flex-direction: column;
+}
+    .item {
+        padding: 10px;
+    }
+
+
+    @media all and (max-width:1023px) {
+        .menu {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .cafe {
+            padding: 20px;
+        }
+        .links {
+        font-size: 20px;
+        }
+        .contact_item {
+            display: flex;
+            flex-direction: row;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .item_img {
+        width: 30px;
+        height: 30px;
+    }
+    }
+
+@media all and (max-width:800px) {
+        .menu {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .cafe {
+            width: 500px;
+            padding: 15px;
+        }
+        .links {
+        font-size: 15px;
+        }
+        .contact_item {
+            display: flex;
+            flex-direction: row;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .item_img {
+        width: 25px;
+        height: 25px;
+    }
+    }
+
+@media all and (max-width: 500px) {
+        .menu {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .cafe {
+            width: 350px;
+            padding: 15px;
+        }
+        .links {
+        font-size: 15px;
+        }
+        .contact_item {
+            display: flex;
+            flex-direction: row;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .item_img {
+        width: 25px;
+        height: 25px;
+    }
+} 
